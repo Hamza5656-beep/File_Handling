@@ -13,7 +13,7 @@ int main() {
     cout << "Enter the new data: ";
     getline(cin, newData);
 
-    ofstream outputFile(filename, ios::app);
+    ofstream outputFile(filename, ios::app); // ye hy wo line jahan file open ho rahi hy
 
     if (!outputFile.is_open()) {
         cerr << "Error opening file for appending." << endl;
